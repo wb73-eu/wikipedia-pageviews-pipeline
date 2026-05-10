@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+*.pyc
+.env
+logs/
+wikipedia_transforms/logs/
+wikipedia_transforms/target/
+wikipedia_transforms/dbt_packages/
