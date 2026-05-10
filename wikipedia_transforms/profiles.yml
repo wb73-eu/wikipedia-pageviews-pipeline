@@ -6,6 +6,6 @@ wikipedia_transforms:
       method: service-account
       project: cloud-portfolio-project-495513
       dataset: wikipedia_marts
-      location: europe-west1
+      location: EU
       threads: 1
       keyfile: /tmp/credentials.json
