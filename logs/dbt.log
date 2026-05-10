@@ -1,0 +1,224 @@
+[0m17:31:13.117969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fbc63e78f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fbc2fa4440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fbc2e0fec0>]}
+
+
+============================== 17:31:13.123283 | 7e9ce604-4b8d-4e96-966f-e22633eadb2b ==============================
+[0m17:31:13.123283 [info ] [MainThread]: Running with dbt=1.11.9
+[0m17:31:13.124192 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'quiet': 'False', 'log_path': 'logs', 'target_path': 'None', 'static_parser': 'True', 'no_print': 'None', 'introspect': 'True', 'write_json': 'True', 'profiles_dir': '/home/walid/.dbt', 'invocation_command': 'dbt init wikipedia_transforms', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'empty': 'None', 'use_colors': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'partial_parse': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None'}
+[0m17:31:13.133791 [info ] [MainThread]: Creating dbt configuration folder at /home/walid/.dbt
+[0m17:31:13.136189 [debug] [MainThread]: Starter project path: /home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:31:13.141453 [info ] [MainThread]: 
+Your new dbt project "wikipedia_transforms" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:31:13.142048 [info ] [MainThread]: Setting up your profile.
+[0m17:32:03.472593 [info ] [MainThread]: Profile wikipedia_transforms written to /home/walid/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:32:03.473911 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 48.619125, "process_in_blocks": "50608", "process_kernel_time": 0.484025, "process_mem_max_rss": "214904", "process_out_blocks": "80", "process_user_time": 3.612902}
+[0m17:32:03.474784 [debug] [MainThread]: Command `dbt init` succeeded at 17:32:03.474688 after 48.62 seconds
+[0m17:32:03.475210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fbc68a2f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fb95232870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x74fb95717d40>]}
+[0m17:32:03.475655 [debug] [MainThread]: Flushing usage events
+[0m17:32:04.306624 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:32:15.775197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e479bb41e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e479b8fe060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e479cf7e2d0>]}
+
+
+============================== 17:32:15.779112 | 6a984d0f-df64-4f39-a4f3-739bd0819d81 ==============================
+[0m17:32:15.779112 [info ] [MainThread]: Running with dbt=1.11.9
+[0m17:32:15.780071 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'cache_selected_only': 'False', 'warn_error': 'None', 'use_colors': 'True', 'no_print': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'profiles_dir': '/home/walid/.dbt', 'empty': 'None', 'log_format': 'default', 'write_json': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'debug': 'False', 'version_check': 'True', 'introspect': 'True'}
+[0m17:32:15.791915 [info ] [MainThread]: dbt version: 1.11.9
+[0m17:32:15.792500 [info ] [MainThread]: python version: 3.12.3
+[0m17:32:15.793186 [info ] [MainThread]: python path: /home/walid/repos/wikipedia-pageviews-pipeline/venv/bin/python3
+[0m17:32:15.793739 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m17:32:16.713447 [info ] [MainThread]: Using profiles dir at /home/walid/.dbt
+[0m17:32:16.714044 [info ] [MainThread]: Using profiles.yml file at /home/walid/.dbt/profiles.yml
+[0m17:32:16.714586 [info ] [MainThread]: Using dbt_project.yml file at /home/walid/repos/wikipedia-pageviews-pipeline/dbt_project.yml
+[0m17:32:16.715179 [info ] [MainThread]: adapter type: bigquery
+[0m17:32:16.715770 [info ] [MainThread]: adapter version: 1.11.1
+[0m17:32:16.716193 [info ] [MainThread]: Configuration:
+[0m17:32:16.716742 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:32:16.717321 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:32:16.717774 [info ] [MainThread]: Required dependencies:
+[0m17:32:16.718222 [debug] [MainThread]: Executing "git --help"
+[0m17:32:16.722641 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:32:16.723064 [debug] [MainThread]: STDERR: "b''"
+[0m17:32:16.723491 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:32:16.723872 [info ] [MainThread]: Connection:
+[0m17:32:16.724305 [info ] [MainThread]:   method: oauth
+[0m17:32:16.724978 [info ] [MainThread]:   database: cloud-portfolio-project-495513
+[0m17:32:16.725966 [info ] [MainThread]:   execution_project: cloud-portfolio-project-495513
+[0m17:32:16.727503 [info ] [MainThread]:   schema: wikipedia_marts
+[0m17:32:16.728169 [info ] [MainThread]:   location: EU
+[0m17:32:16.728795 [info ] [MainThread]:   priority: interactive
+[0m17:32:16.729290 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:32:16.729760 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:32:16.730218 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:32:16.730705 [info ] [MainThread]:   job_retries: 1
+[0m17:32:16.731139 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:32:16.731602 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:32:16.731984 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:32:16.732365 [info ] [MainThread]:   client_id: None
+[0m17:32:16.732786 [info ] [MainThread]:   token_uri: None
+[0m17:32:16.733260 [info ] [MainThread]:   compute_region: None
+[0m17:32:16.733654 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:32:16.734027 [info ] [MainThread]:   gcs_bucket: None
+[0m17:32:16.734432 [info ] [MainThread]:   dataproc_batch: None
+[0m17:32:16.735035 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m17:32:16.863979 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:32:16.864429 [debug] [MainThread]: On debug: select 1 as id
+[0m17:32:16.864821 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:32:25.720148 [error] [MainThread]: Encountered an error:
+
+[0m17:32:25.736905 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 425, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/task/debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/task/debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/task/debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/bigquery/impl.py", line 1292, in debug_query
+    self.execute("select 1 as id")
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/base/impl.py", line 471, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/bigquery/connections.py", line 309, in execute
+    query_job, iterator = self.raw_execute(sql, limit=limit)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/bigquery/connections.py", line 280, in raw_execute
+    return retry(_execute_with_retry)()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/bigquery/connections.py", line 271, in _execute_with_retry
+    return self._query_and_results(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/dbt/adapters/bigquery/connections.py", line 599, in _query_and_results
+    query_job = client.query(
+                ^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/client.py", line 3590, in query
+    return _job_helpers.query_jobs_insert(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/_job_helpers.py", line 205, in query_jobs_insert
+    future = do_query()
+             ^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/_job_helpers.py", line 151, in do_query
+    query_job._begin(retry=retry, timeout=timeout)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/job/query.py", line 1489, in _begin
+    super(QueryJob, self)._begin(client=client, retry=retry, timeout=timeout)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/job/base.py", line 825, in _begin
+    api_response = client._call_api(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/bigquery/client.py", line 861, in _call_api
+    return call()
+           ^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/_http/__init__.py", line 482, in api_request
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/_http/__init__.py", line 341, in _make_request
+    return self._do_request(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/cloud/_http/__init__.py", line 379, in _do_request
+    return self.http.request(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/auth/transport/requests.py", line 538, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/auth/credentials.py", line 469, in before_request
+    self._blocking_refresh(request)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/auth/credentials.py", line 203, in _blocking_refresh
+    self.refresh(request)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/auth/credentials.py", line 482, in refresh
+    self._perform_refresh_token(request)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/oauth2/credentials.py", line 435, in _perform_refresh_token
+    ) = reauth.refresh_grant(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/oauth2/reauth.py", line 337, in refresh_grant
+    ) = _client._token_endpoint_request_no_throw(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/oauth2/_client.py", line 196, in _token_endpoint_request_no_throw
+    response = request(
+               ^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/google/auth/transport/requests.py", line 188, in __call__
+    response = self.session.request(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/walid/repos/wikipedia-pageviews-pipeline/venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+
+[0m17:32:25.738434 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 10.04648, "process_in_blocks": "576", "process_kernel_time": 0.52351, "process_mem_max_rss": "219544", "process_out_blocks": "56", "process_user_time": 3.958546}
+[0m17:32:25.738963 [debug] [MainThread]: Command `dbt debug` failed at 17:32:25.738834 after 10.05 seconds
+[0m17:32:25.739330 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:32:25.739788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e479bf35e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47704ed220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4769b0af60>]}
+[0m17:32:25.740255 [debug] [MainThread]: Flushing usage events
+[0m17:32:26.283753 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:07:32.012099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f4c45c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f301e2a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f1d1e0f0>]}
+
+
+============================== 18:07:32.017194 | 2959e588-346a-4869-a8c2-34c8c78a124c ==============================
+[0m18:07:32.017194 [info ] [MainThread]: Running with dbt=1.11.9
+[0m18:07:32.017960 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'empty': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'log_path': 'logs', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'profiles_dir': '/home/walid/.dbt', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'no_print': 'None', 'introspect': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True'}
+[0m18:07:32.018486 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/walid/repos/wikipedia-pageviews-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:07:32.019893 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.08187982, "process_in_blocks": "43920", "process_kernel_time": 0.257984, "process_mem_max_rss": "102936", "process_out_blocks": "16", "process_user_time": 1.598655}
+[0m18:07:32.020486 [debug] [MainThread]: Command `dbt run` failed at 18:07:32.020303 after 0.08 seconds
+[0m18:07:32.021215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f57b32c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f1225520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7379f11f6300>]}
+[0m18:07:32.021649 [debug] [MainThread]: Flushing usage events
+[0m18:07:32.800927 [debug] [MainThread]: An error was encountered while trying to flush usage events

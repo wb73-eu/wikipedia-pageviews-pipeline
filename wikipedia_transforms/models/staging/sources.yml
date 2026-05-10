@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: wikipedia_raw
+    project: cloud-portfolio-project-495513
+    dataset: wikipedia_raw
+    tables:
+      - name: pageviews
