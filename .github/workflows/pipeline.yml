@@ -33,4 +33,6 @@ jobs:
         working-directory: wikipedia_transforms
         env:
           GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
-        run: dbt run --profiles-dir .
+        run: |
+          echo "$GCP_CREDENTIALS" > /tmp/credentials.json
+          dbt run --profiles-dir .
