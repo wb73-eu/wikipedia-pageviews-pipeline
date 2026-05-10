@@ -6,3 +6,4 @@ logs/
 wikipedia_transforms/logs/
 wikipedia_transforms/target/
 wikipedia_transforms/dbt_packages/
+credentials.json
