@@ -1,0 +1,11 @@
+wikipedia_transforms:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: cloud-portfolio-project-495513
+      dataset: wikipedia_marts
+      location: europe-west1
+      threads: 1
+      keyfile_json: "{{ env_var('GCP_CREDENTIALS') }}"
