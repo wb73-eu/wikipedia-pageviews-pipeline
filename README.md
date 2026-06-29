@@ -76,6 +76,8 @@ cd wikipedia_transforms && dbt run
 
 Built in Looker Studio connected directly to the `wikipedia_marts.top_articles` BigQuery table. Shows the top 10 most viewed English Wikipedia articles for the latest hour with total view counts.
 
+🔗 **[Click here to view the Live Wikipedia Pageviews Dashboard](https://datastudio.google.com/reporting/b13130f3-1cee-4f48-ae1a-085056b8f795)**
+
 ![Dashboard](assets/dashboard.png)
 
 ## Future Improvements
